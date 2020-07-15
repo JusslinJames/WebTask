@@ -39,25 +39,10 @@ const currentyear=date.getFullYear();
     
     document.querySelector(".date h1").innerHTML=months[date.getMonth()];
     document.querySelector(".date p").innerHTML=currentday +" - "+ currentmonth +" - "+ currentyear;
-    // document.querySelector(".date p").innerHTML=date.toDateString();
-    
+        
     //for dynamic dates display
     const monthdays=document.querySelector(".days");
     let day="";
-
-  
-
-  
-
-
-
-
-
-
-
-
-    
- 
 
     //for previous months date ->space
     for(let i=1;i<=currentmonthlastday+currentmonthfirstdayindex;i++)
@@ -66,7 +51,6 @@ const currentyear=date.getFullYear();
         if(i>currentmonthfirstdayindex)
         {
             day+= `<div class="day" id="${i-currentmonthfirstdayindex}"> ${i-currentmonthfirstdayindex} </div>`;
-            // day+= `<div class="day" onclick="location.href='demo.html';"> ${i-currentmonthfirstdayindex} </div>`;
             monthdays.innerHTML=day;
         }
         else
@@ -90,9 +74,6 @@ const currentyear=date.getFullYear();
             }
             clickedmonth=clickedmonth.toString();
             let clickedyear=date.getFullYear().toString();
-            
-           
-
             document.querySelector(".date p").innerHTML=clickeddate+" - "+clickedmonth+" - "+clickedyear;
 
 
@@ -101,6 +82,7 @@ const currentyear=date.getFullYear();
     //C1 ends
 
    show1(currentmonth,currentyear);
+   showevents(currentmonth,currentyear);
 };
 
 
@@ -130,24 +112,19 @@ document.querySelector(".previous").addEventListener("click", () => {
 
 
 
-
 function show1(currentmonth,currentyear)
 {
 var monthdata=currentmonth;
 var yeardata=currentyear;
 
-
-
 $.ajax({
     type: "GET",
     url: 'fetchdata.php',
     data: {m: monthdata, y: yeardata},
+    async : true,
     success: function(data){
         
 var res = data.split(" ");
-
-
-
 
 for(var i=0;i<res.length;i++)
 {
@@ -164,4 +141,18 @@ for(var i=0;i<res.length;i++)
 
 
   
+function showevents(currentmonth1,currentyear1)
+{
+    var monthdata=currentmonth1;
+    var yeardata=currentyear1;
+    $.ajax({
+    type: "GET",
+    url: 'del.php',
+    data: {m: monthdata, y: yeardata},
+    async : true,
+    success: function(response){
+        $("#res").html(response);
+    }
 
+    });
+}

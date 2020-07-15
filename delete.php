@@ -11,6 +11,6 @@ $id=$_GET['eventId'];
 
 $sql= " DELETE FROM event WHERE eventId = $id ";
 mysqli_query($conn,$sql);
-header('location:DisplayEvent.php');
+header('location:Calendar.php');
 
 ?>

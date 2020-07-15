@@ -4,19 +4,20 @@
 <html>
 <head>
 	<title>Calender</title>
-	<link rel="stylesheet" type="text/css" href="Calendar.css">
-	
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="Calendar.css">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
 
     
 <div class="container">
 
-    
+	<div class="btnclass">
+			<a href="index.html" class="btn btn-success mb-3 mx-3" role="button">Create Event</a>
+		<!-- <a href="DisplayEvent.php" class="btn btn-success mb-3" role="button">View / Delete Event</a> -->
+	</div>
 
 	<div class="calender">
 		<div class="months">
@@ -55,87 +56,30 @@
 	</div>
 
     
-    <div class="btnclass ">
-        <a href="index.html" class="btn btn-success mb-3 mx-3" role="button">Create Event</a>
-    <a href="DisplayEvent.php" class="btn btn-success mb-3" role="button">View / Delete Event</a>
-    </div>
-
+</div>  
 
 
 
 
 <div class="content">
 
+<table class="table table-striped">
+  <thead>
+    <tr class="bg-dark text-white">
+      <th scope="col">Sr.</th>
+      <!-- <th scope="col">Id</th> -->
+      <th scope="col">Event Date</th>
+      <th scope="col">Event Title</th>
+      <th scope="col">Delete</th>
+    </tr>
+  </thead>
+  <tbody id="res">
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  </tbody>
+</table>
 
 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	
-
 
 
 

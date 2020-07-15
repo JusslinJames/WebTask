@@ -31,7 +31,7 @@
                 </form>
                 <div class="ops">
                     <a href="Calendar.php" class="btn btn-danger m-0" role="button">View Calendar</a>
-                    <a href="DisplayEvent.php" class="btn btn-danger m-0" role="button">View / Delete Events</a>
+                    <!-- <a href="DisplayEvent.php" class="btn btn-danger m-0" role="button">View / Delete Events</a> -->
                 </div>
             </div>
             
@@ -52,7 +52,7 @@
     
     if(date== "" || title == "")
     {
-        document.getElementById('error_message').innerHTML="Invalid data";  
+        document.getElementById('error_message').innerHTML="Please Provide some input !!! Error: Blank Field. ";  
         return false;
     }
     if(title.includes("'"))
@@ -63,7 +63,7 @@
     else
     {
         document.getElementById('error_message').innerHTML=""; 
-        alert("Record insert successfully!"); 
+        alert("Submit Record !"); 
         return true;
     }
 }

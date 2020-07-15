@@ -1,6 +1,5 @@
 *{
 	margin: 0;
-
 	padding: 0;
 }
 
@@ -20,10 +19,8 @@ html{
 	height:52rem;
 	width: 45rem;
 	padding: 2rem;
-    border: groove;
-    
+    border: groove;   
 }
-
 
 .months{
 	width: 100%;
@@ -75,11 +72,6 @@ html{
 	width: calc(40rem/7);
 }
 
-
-
-
-
-
 .days{
 	display: flex;
 	flex-wrap: wrap;
@@ -100,17 +92,6 @@ html{
 	border: 0.1rem solid #777;
 
 }
-
-.today{
-	background-color: #8cd7fa;
-}
-
-
-
-
-
-
-
 
 
 .event_container{
@@ -135,7 +116,6 @@ html{
 
 
 .btnclass{
-    margin-top: 2rem;
     
-    
+    margin-bottom:2rem;
 }
