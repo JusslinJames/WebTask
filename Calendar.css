@@ -4,19 +4,20 @@
 }
 
 html{
-	font-size: 60%;
+	font-size: 60%;		
 }
 
-.container{
+.c{
 	height: 100vh;
 	width: 100%;
-	display: flex;
-	justify-content: center;
-    align-items: center;
-    flex-direction: column;
+	display: flex; 
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: row;
+    
 }
 .calender{
-	height:52rem;
+	height: auto;
 	width: 45rem;
 	padding: 2rem;
     border: groove;   
@@ -91,31 +92,4 @@ html{
 	cursor: pointer;
 	border: 0.1rem solid #777;
 
-}
-
-
-.event_container{
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	
-}
-
-
-.event{
-	height: 50%;
-	width: 50%;
-	border: groove;
-	display: flex;
-	justify-content: center;
-	
-	padding: 3rem;
-}
-
-
-.btnclass{
-    
-    margin-bottom:2rem;
 }
