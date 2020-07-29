@@ -24,7 +24,7 @@ while($res= mysqli_fetch_array($query))
 ?>
 
 
-    <tr>
+    <tr class="text-center">
       <th> <?php echo $srno ?> </th>
       <!-- <th> <?php echo $res['eventId']; ?> </th> -->
       <td> <?php echo $res['eventDate']; ?> </td>

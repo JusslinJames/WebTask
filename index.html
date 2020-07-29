@@ -1,76 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Index</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 
 
 
 </head>
+
 <body>
 
-    <div class="container1">
+    <div class="container1 ">
         <div class="overlay">
-        <div class="event">
-            
-            <h1 class="text-center">Create Event</h1>
-            <div class="form-body text-center">
-                <form id="myform" method="POST" onsubmit="return validate()" action="insert.php">
-                    <label class="label">Event Date: </label>
-                    <input type="date" id="eventDate" name="eventDate" ><br><br>
-                    <label>Event Title: </label> 
-                    <input type="text" id="eventTitle" name="eventTitle" placeholder="enter the event name"><br>
-                    <center><input class=" btn btn-danger" id="submit" name="submit" type="submit" ></center><br>
-                    <center><span id="success_message" class="text-success" ></span></center>
-                    <center><span id="error_message" class="text-danger"></span></center><br>
-                </form>
-                <div class="ops">
-                    <a href="Calendar.php" class="btn btn-danger m-0" role="button">View Calendar</a>
-                    <!-- <a href="DisplayEvent.php" class="btn btn-danger m-0" role="button">View / Delete Events</a> -->
+            <div class="event col-md-3 m-3">
+
+                <h1 class="text-center">Create Event</h1>
+                <div class="form-body text-center">
+                    <form id="myform" method="POST" onsubmit="return validate()" action="insert.php">
+                        <label class="label">Event Date: </label>
+                        <input type="date" id="eventDate" name="eventDate"><br><br>
+                        <label>Event Title: </label>
+                        <input type="text" id="eventTitle" name="eventTitle" placeholder="enter the event name"><br>
+                        <center><input class=" btn btn-danger" id="submit" name="submit" type="submit"></center><br>
+                        <center><span id="success_message" class="text-success"></span></center>
+                        <center><span id="error_message" class="text-danger"></span></center><br>
+                    </form>
+                    <div class="ops">
+                        <a href="Calendar.php" class="btn btn-danger m-0" role="button">View Calendar</a>
+                        <!-- <a href="DisplayEvent.php" class="btn btn-danger m-0" role="button">View / Delete Events</a> -->
+                    </div>
                 </div>
+
             </div>
-            
-        </div>
         </div>
     </div>
-    
+
+
+
+
+
 
 
 
 
 
     <script>
-        function validate()
-{
-    var date=document.getElementById('eventDate').value;
-    var title=document.getElementById('eventTitle').value.trim();
-    
-    if(date== "" || title == "")
-    {
-        document.getElementById('error_message').innerHTML="Please Provide some input !!! Error: Blank Field. ";  
-        return false;
-    }
-    if(title.includes("'"))
-    {
-        document.getElementById('error_message').innerHTML="Cannot use ' symbol.";  
-        return false;
-    }
-    else
-    {
-        document.getElementById('error_message').innerHTML=""; 
-        alert("Submit Record !"); 
-        return true;
-    }
-}
-    
-    
-    
+        function validate() {
+            var date = document.getElementById('eventDate').value;
+            var title = document.getElementById('eventTitle').value.trim();
+
+            if (date == "" || title == "") {
+                document.getElementById('error_message').innerHTML = "Please Provide some input !!! Error: Blank Field. ";
+                return false;
+            }
+            if (title.includes("'")) {
+                document.getElementById('error_message').innerHTML = "Cannot use ' symbol.";
+                return false;
+            }
+            else {
+                document.getElementById('error_message').innerHTML = "";
+                alert("Submit Record !");
+                return true;
+            }
+        }
     </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>

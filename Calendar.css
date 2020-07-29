@@ -93,3 +93,16 @@ html{
 	border: 0.1rem solid #777;
 
 }
+
+
+@media screen and (max-width: 600px) {
+	.calender{
+    border-left-width: 41px;
+    padding-left: 0px;
+    padding-right: 0px;
+	}
+
+}
+
+
+

@@ -151,7 +151,7 @@ function showevents(currentmonth1,currentyear1)
     data: {m: monthdata, y: yeardata},
     async : true,
     success: function(response){
-        $("#res").html(response);
+     $("#res").html(response); 
     }
 
     });
