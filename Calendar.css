@@ -8,10 +8,10 @@ html{
 }
 
 .c{
-	height: 100vh;
-	width: 100%;
+	/* height: 100vh;
+	width: 100%; */
 	display: flex; 
-	justify-content: space-around;
+	justify-content: center;
 	align-items: center;
 	flex-direction: row;
     
@@ -20,7 +20,9 @@ html{
 	height: auto;
 	width: 45rem;
 	padding: 2rem;
-    border: groove;   
+	border: groove;  
+	margin: 0rem;
+	
 }
 
 .months{
@@ -93,7 +95,15 @@ html{
 	border: 0.1rem solid #777;
 
 }
-
+#bx{
+	/* display: flex;  */
+	/* justify-content: space-around; */
+	/* align-items: center; */
+	/* margin-left: 100px!important; */
+	height:auto;
+	width:100%; 
+	padding:0;
+}
 
 @media screen and (max-width: 600px) {
 	.calender{
@@ -101,7 +111,7 @@ html{
     padding-left: 0px;
     padding-right: 0px;
 	}
-
+	
 }
 
 

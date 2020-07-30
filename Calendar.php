@@ -6,9 +6,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Calender</title>
 	<link rel="stylesheet" type="text/css" href="Calendar.css">		
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+
+
 
 </head>
 <body>
@@ -16,7 +20,7 @@
 
 <div class="container c">
 
-	<div class="row">
+	<div class="row text-center">
 
 	<div class="calender">
 		<div class="months">
@@ -62,25 +66,25 @@
 
 
 		<!-- Display Event block -->
-		<div class="bx" style="height:auto; width:auto; border:1px solid black; padding:0;">
-		<div class="content">
+		<div class="bx mt-3 mx-auto p-5 m-0" id="bx">
+			<div class="content">
 
-		<table class="table table-striped">
-		<thead>
-			<tr style="background-color:black; color:white; text-align:center;">
-			<th scope="col">Sr. No.	</th>
-			<th scope="col">Event Date</th>
-			<th scope="col">Event Title</th>
-			<th scope="col">Delete</th>
-			</tr>
-		</thead>
-		<tbody id="res">
-		<p></p>
+			<table class="table table-striped">
+			<thead>
+				<tr style="background-color:black; color:white; text-align:center;">
+				<th scope="col">Sr. No.	</th>
+				<th scope="col">Event Date</th>
+				<th scope="col">Event Title</th>
+				<th scope="col">Delete</th>
+				</tr>
+			</thead>
+			<tbody id="res">
+			<p></p>
 
-		</tbody>
-		</table>
+			</tbody>
+			</table>
 
-		</div>
+			</div>
 		</div>
 		<!-- Display Event block ends -->
 
@@ -100,14 +104,16 @@
 
 
 
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="Calendar.js"></script>
 
 	</body>
-	<script type="text/javascript" src="Calendar.js"></script>
-	<script src="https://code.jquery.com/jquery-3.1.1.min.js">
+	
+	<!-- <script src="https://code.jquery.com/jquery-3.1.1.min.js">
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-	
+	 -->
 
 
 </html>
